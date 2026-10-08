@@ -105,7 +105,7 @@ const uint8_t baseCodeBaseList[16][4] = {
 
 void printHistogram(FILE* file, uint64_t* hist, int bins, int indent, int lastPlus)
 {
-  char     binStr[20], valStr[20], pctStr[20], binLine[120] = "", valLine[120] = "", pctLine[120] = "";
+  char     binStr[20], valStr[21], pctStr[20], binLine[120] = "", valLine[120] = "", pctLine[120] = "";
   int      i, x, len = 0, first = 1, max, last = 0;
   uint64_t total = 0;
   double   pct;
